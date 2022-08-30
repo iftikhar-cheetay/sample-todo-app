@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        LT_BUILD_NAME = "lambdatest-pipeline"
+        LT_BUILD_NAME = "lambda-PipeLine"
     }
     stages {
   stage('Setup') {
