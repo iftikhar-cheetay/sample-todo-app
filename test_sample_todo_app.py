@@ -6,9 +6,13 @@ import json
 
 url = os.getenv("LT_HUB_URL")
 capabilities = {
-    browser_version = "105.0"
-    platform_name = "Windows 10"
-    et_capability('LT:Options', lt_options);
+    "build" : os.getenv("LT_BUILD_NAME"),
+    "name" : "Quick Test",
+    "platform" : "Windows 10",
+    "browserName" : "Chrome",
+    "version" : "88.0",
+    "resolution" : "1920x1080",
+    "tunnel" : True
 }
 driver = webdriver.Remote(
     desired_capabilities= capabilities,
