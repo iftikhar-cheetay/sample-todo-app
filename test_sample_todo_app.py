@@ -1,16 +1,16 @@
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import os
 import json
 
+
 url = os.getenv("LT_HUB_URL")
 capabilities = {
     "build" : os.getenv("LT_BUILD_NAME"),
     "name" : "Quick Test",
-    "platform" : "Windows 10",
+    "platform_name" : "Windows 10",
     "browserName" : "Chrome",
-    "version" : "105.0",
+    "browser_version" : "105.0",
     "resolution" : "1920x1080",
     "tunnel" : True
 }
